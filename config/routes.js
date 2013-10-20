@@ -31,15 +31,16 @@ module.exports.routes = {
     '/': 'HomeController.index',
 
     // users
-    /*'/signup': {
-        view: 'users/signup'
-    },*/
-    'post /signup': 'UsersController.signup',
-
-    '/signin': {
-        view: 'users/signin'
+    'post /signup': 'UserController.signup',
+    '/signup': {
+        view: 'user/signup'
     },
-    'post /signin': 'UsersController.signin'
+
+    'post /signin': 'UserController.signin',
+    '/signin': {
+        view: 'user/signin'
+    }
+
 
     // handler
     //'/:unknownRoute': 'HandlerController.notfound',

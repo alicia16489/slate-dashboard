@@ -1,0 +1,37 @@
+extends ../layout
+
+block body
+    body.contrast-blue.sign-in.contrast-background
+    #wrapper
+        .application
+            .application-content
+                a(href='/')
+                    .icon-heart
+                    span Slate-Dashboard
+        .controls
+            .caret
+            .form-wrapper
+                h1.text-center Sign in
+                form(accept-charset='UTF-8', action='/signin', method='post')
+                    div(style='margin: 0; padding: 0; display: inline;')
+                        input(name='utf8', type='hidden', value='✓')
+                    .row-fluid
+                        .span12.icon-over-input
+                            input#email.span12(name='email', placeholder='E-mail', type='text', value='')
+                            i.icon-user.muted
+                    .row-fluid
+                        .span12.icon-over-input
+                            input#password.span12(name='password', placeholder='Password', type='password', value='')
+                            i.icon-lock.muted
+                    label.checkbox(for='remember_me')
+                        input#remember_me(name='remember_me', type='checkbox', value='1')
+                        | Remember me
+                    input.btn.btn-block(name='button', type='submit') Sign in
+                .text-center
+                    hr.hr-normal
+                    a(href='forgot_password.html') Forgot your password?
+        .login-action.text-center
+            a(href='/signup')
+                i.icon-user
+                |  New to Slate-Dashboard?
+                strong  Sign up
