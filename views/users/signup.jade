@@ -1,0 +1,41 @@
+extends ../layout
+
+block body
+    body.contrast-blue.sign-up.contrast-background
+        div#wrapper
+            div.application
+                div.application-content
+                    a(href="#")
+                        div.icon-heart
+                        span Slate-Dashboard
+            div.controls
+                div.caret
+                div.form-wrapper
+                    h1.text-center Sign up
+                    form(accept-charset="UTF8" action="" method="")
+                        div(style="margin:0;padding:0;display:inline")
+                            input(name="utf8" type="hidden" value="&#x2713;")
+                        div.row-fluid
+                            div.span12.icon-over-input
+                                input#login.span12(name="login" placeholder="Login" type="text" value="")
+                                i.icon-user.muted
+                        div.row-fluid
+                            div.span12.icon-over-input
+                                input#email.span12(name="email" placeholder="E-mail" type="text" value="")
+                                i.icon-user.muted
+                        div.row-fluid
+                            div.span12.icon-over-input
+                                input#password.span12(name="password" placeholder="Password" type="text" value="")
+                                i.icon-lock.muted
+                        div.row-fluid
+                            div.span12.icon-over-input
+                                input#password_confirmation.span12(name="password_confirmation" placeholder="Password Confirmation" type="text" value="")
+                                i.icon-lock.muted
+                        button.btn.btn-block(name="button" type="submit") Sign up
+                    div.text-center
+                        hr.hr-normal
+                        a(href="/signin")
+                            i.icon-chevron-left
+                            | Go back to sign in
+
+

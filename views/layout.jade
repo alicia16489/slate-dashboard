@@ -1,0 +1,116 @@
+!!!
+html
+    head
+        title= title
+
+        // Viewport mobile tag for sensible mobile support
+        meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+
+        // STYLES
+        link(rel="stylesheet", href="/linker/styles/bootstrap/bootstrap-responsive.css")
+        link(rel="stylesheet", href="/linker/styles/bootstrap/bootstrap.css")
+        link(rel="stylesheet", href="/linker/styles/demo.css")
+        link(rel="stylesheet", href="/linker/styles/jquery_ui/jquery-ui-1.10.0.custom.css")
+        link(rel="stylesheet", href="/linker/styles/jquery_ui/jquery.ui.1.10.0.ie.css")
+        link(rel="stylesheet", href="/linker/styles/light-theme.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/bootstrap_colorpicker/bootstrap-colorpicker.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/bootstrap_switch/bootstrap-switch.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/common/bootstrap-wysihtml5.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/datatables/bootstrap-datatable.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/dynatree/ui.dynatree.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/flags/flags.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/fuelux/wizard.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/fullcalendar/fullcalendar.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/jgrowl/jquery.jgrowl.min.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/jquery_fileupload/jquery.fileupload-ui.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/mention/mention.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/select2/select2.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/slider_nav/slidernav.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/tabdrop/tabdrop.css")
+        link(rel="stylesheet", href="/linker/styles/plugins/xeditable/bootstrap-editable.css")
+        // STYLES END
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+
+        // SCRIPTS
+        script(type="text/javascript", src="/linker/js/socket.io.js")
+        script(type="text/javascript", src="/linker/js/sails.io.js")
+        script(type="text/javascript", src="/linker/js/app.js")
+        script(type="text/javascript", src="/linker/js/javascripts/bootstrap/bootstrap.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/demo/charts.js")
+        script(type="text/javascript", src="/linker/js/javascripts/demo/demo.js")
+        script(type="text/javascript", src="/linker/js/javascripts/demo/inplace_editing.js")
+        script(type="text/javascript", src="/linker/js/javascripts/demo/jquery.mockjax.js")
+        script(type="text/javascript", src="/linker/js/javascripts/html5shiv.js")
+        script(type="text/javascript", src="/linker/js/javascripts/jquery/jquery-migrate.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/jquery/jquery.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/jquery_ui/jquery-ui.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/nav.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/autosize/jquery.autosize-min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootbox/bootbox.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootstrap_colorpicker/bootstrap-colorpicker.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootstrap_daterangepicker/moment.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootstrap_hover_dropdown/twitter-bootstrap-hover-dropdown.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootstrap_maxlength/bootstrap-maxlength.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/bootstrap_switch/bootstrapSwitch.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/charCount/charCount.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/ckeditor/ckeditor.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/ckeditor/config.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/ckeditor/plugins/templates/templates/default.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/ckeditor/styles.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/common/bootstrap-wysihtml5.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/common/wysihtml5.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/datatables/jquery.dataTables.columnFilter.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/datatables/jquery.dataTables.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/dynatree/jquery.dynatree.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileinput/bootstrap-fileinput.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/canvas-to-blob.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/jquery.fileupload-fp.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/jquery.fileupload-init.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/jquery.fileupload-ui.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/jquery.fileupload.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/jquery.iframe-transport.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/load-image.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fileupload/tmpl.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/flot/excanvas.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/flot/flot.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/flot/flot.pie.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/flot/flot.resize.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fuelux/wizard.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/fullcalendar/fullcalendar.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/input_mask/bootstrap-inputmask.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/jgrowl/jquery.jgrowl.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/mention/mention.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/mobile_events/jquery.mobile-events.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/modernizr/modernizr.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/naked_password/naked_password-0.2.4.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/nestable/jquery.nestable.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/retina/retina.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/select2/select2.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/slider_nav/slidernav-min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/slimscroll/jquery.slimscroll.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/sparklines/jquery.sparkline.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/tabdrop/bootstrap-tabdrop.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/timeago/jquery.timeago.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/validate/additional-methods.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/validate/jquery.validate.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/xeditable/bootstrap-editable.min.js")
+        script(type="text/javascript", src="/linker/js/javascripts/plugins/xeditable/wysihtml5.js")
+        script(type="text/javascript", src="/linker/js/javascripts/tables.js")
+        script(type="text/javascript", src="/linker/js/javascripts/theme.js")
+        script(type="text/javascript", src="/application/app.js")
+        // SCRIPTS END
+
+        // TEMPLATES
+        
+        // TEMPLATES END
+
+        block styles
+
+block body
