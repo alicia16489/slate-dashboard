@@ -1,2 +1,2 @@
-# slate-dashboard
-### a Sails application
+slate-dashboard
+
