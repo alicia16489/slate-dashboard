@@ -11,7 +11,6 @@
 module.exports = {
     tableName: 'users',
     attributes: {
-
         login: {
             type: 'STRING',
             max: 45,
@@ -30,9 +29,4 @@ module.exports = {
         }
 
     }
-
-
-
-
-
 };
